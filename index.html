@@ -40,27 +40,53 @@
         a:hover {
             text-decoration: underline;
         }
+        .red-bold {
+            color: red;
+            font-weight: bold;
+        }
+        .profile {
+            display: flex;
+            align-items: center; /* 垂直居中对齐 */
+        }
+        .profile img {
+            border-radius: 50%; /* 使图片圆形 */
+            margin-right: 20px; /* 图片与文字之间的间距 */
+        }
+        .contact-info {
+            max-width: 600px; /* 设置最大宽度 */
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>李明政</h1>
-        <div class="contact-info">
-            <p>中国科学技术大学 先进技术研究院 博士在读</p>
-            <p>Email: <a href="mailto:mingzhengli@mail.ustc.edu.cn">mingzhengli@mail.ustc.edu.cn</a> 或 <a href="mailto:mzli_hhu@gmail.com">mzli_hhu@gmail.com</a></p>
-            <p>电话：+86-13770538809</p>
+        <div class="profile">
+            <img src="./photos/bio.jpg" alt="李明政" width="150" height="150">
+                    <div class="contact-info">
+                        <h1>李明政</h1>
+                        <p>中国科学技术大学 先进技术研究院 博士在读</p>
+                        <p>Email: <a href="mailto:mingzhengli@mail.ustc.edu.cn">mingzhengli@mail.ustc.edu.cn</a> 或 <a href="mailto:mzli_hhu@gmail.com">mzli_hhu@gmail.com</a></p>
+                        <p>电话：+86-13770538809</p>
+                        <p><strong>谷歌学术链接：</strong> <a href="https://scholar.google.com/citations?user=ttsOb-kAAAAJ" target="_blank">访问我的谷歌学术</a></p>
+                    </div>
         </div>
-
+    
         <h2>个人简介</h2>
         <p>李明政，中国科学技术大学 先进技术研究院 计算机技术博士在读，研究方向为自然语言处理、智能人机会话与情感交互、情感计算。</p>
+        <p>同时与合肥综合性国家科学中心人工智能研究院(安徽省人工智能实验室)普适心理计算实验室联合培养, 导师是<a href="https://faculty.hfut.edu.cn/sunxiao/zh_CN/index.htm">孙晓教授</a>、<a href="https://faculty.ustc.edu.cn/yangxun/">杨勋教授</a>和<a href="https://faculty.hfut.edu.cn/wm12/zh_CN/index/198449/list/">汪萌教授</a>(IEEE/IAPR Fellow)</p>
+
+        <h2>联培团队</h2>
+        <p>合肥综合性国家科学中心人工智能研究院(Institute of Artificial Intelligence, Hefei Comprehensive National Science Center)<br>
+           <a href="https://iai.ustc.edu.cn/iai/r271.html">汪萌教授团队（普适心理计算与交互干预技术研究及应用团队）</a></p>
+        <p>情感计算与先进智能机器安徽省重点实验室(Anhui Provincial Key Laboratory of Affective Computing and Advanced Intelligent Machines) 
+            <a href="https://www.sunxiaomaclab.com/">孙晓教授团队(MAC-Labm, Multimedia Affective Computing Lab)</a></p>
 
         <h2>获得奖励</h2>
         <h3>个人奖励</h3>
         <ul>
-            <li>中国科学技术大学, 中国光谷奖学金, 2024.1.1(校级，第一获奖人)</li>
-            <li>安徽省大学生创新大赛(2024)- Al大模型赋能下的心理健康行业应用与创新 安徽省金奖（第三参与人）</li>
-            <li>安徽省大学生创新大赛(2024)- AI赋能下的军民融合应用创新 安徽省金奖（第七参与人）<a href="https://djyszw.ustc.edu.cn/info/1006/5116.htm" target="_blank">相关链接</a></li>
-            <li>中国国际大学生创新大赛(2023)- 融合AI技术的智能家居应用创新 国赛铜奖（项目负责人）</li>
+            <li>中国科学技术大学, 中国光谷奖学金, 2024.1.1 (校级)</li>
+            <li>安徽省大学生创新大赛(2024), Al大模型赋能下的心理健康行业应用与创新 安徽省金奖（第三参与人）</li>
+            <li>安徽省大学生创新大赛(2024), AI赋能下的军民融合应用创新 安徽省金奖（第七参与人）</li>
+            <li>中国国际大学生创新大赛(2023)- 融合AI技术的智能家居应用创新 国赛铜奖（<span class="red-bold" >项目负责人</span>) <a href="https://djyszw.ustc.edu.cn/info/1006/5116.htm" target="_blank">Link</a></li>
             <li>中国国际大学生创新大赛(2023)- 普适场景中的智能心理检测与分析解决方案 国赛银奖（第十参与人）</li>
         </ul>
 
@@ -71,14 +97,14 @@
 
         <h2>论文发表</h2>
         <ul>
-            <li>Mingzheng Li, Xiao Sun, and Meng Wang. "Detecting depression with heterogeneous graph neural network in clinical interview transcript." <em>IEEE Transactions on Computational Social Systems</em> 11, no. 1 (2023): 1315-1324.(中科院二区,CCF C)</li>
-            <li>Haojie Xu, Weifeng Liu, Jiangwei Liu, Mingzheng Li, Yu Feng, Yasi Peng, Yunwei Shi, Xiao Sun, and Meng Wang. "Hybrid multimodal fusion for humor detection." <em>Proceedings of the 3rd International on Multimodal Sentiment Analysis Workshop and Challenge</em> (2022): 15-21.(CCF A)</li>
-            <li>Mingzheng Li, Haojie Xu, Weifeng Liu, Jiangwei Liu. "Bidirectional LSTM and attention for depression detection on clinical interview transcripts." <em>2022 IEEE 10th International Conference on Information, Communication and Networks (ICICN)</em>, pp. 638-643. IEEE, 2022.(EI)</li>
-            <li>Mingzheng Li, Lei Chen, Jing Zhao, Qiang Li. "Sentiment analysis of Chinese stock reviews based on BERT model." <em>Applied Intelligence</em> 51 (2021): 5016-5024. (中科院二区,CCF C)</li>
-            <li>Jing Zhao, Mingzheng Li, Jinting Liu, Dajie Sun. "Fractal simulation of hydrophobic flocculation fragmentation and reconstruction of coal particles." <em>Fuel</em> 360 (2024): 130564. （中科院二区）</li>
-            <li>Jing Zhao, Jinting Liu, Mingzheng Li, and Jingyun Hou. "Study on micro-energy consumption model of ultrafine grinding coal particles." <em>Fuel</em> 329 (2022): 125542. （中科院二区）</li>
-            <li>Zhao, Jing, Yunhu Hu, Mingzheng Li, Jinting Liu, and Jingyun Hou. "Study on the variation law of geometric and surface properties of ultrafine coal particles with particle size." <em>Particulate Science and Technology</em> 41, no. 8 (2023): 1079-1087. （中科院四区）</li>
-            <li>Yan Tang, Mingzheng Li, Wangsong Wang, Pengcheng Xuan, and Kun Geng. "Quality-Aware Movie Recommendation System on Big Data." <em>Proceedings of the Fourth IEEE/ACM International Conference on Big Data Computing, Applications and Technologies</em> (2017): 273-274.(EI)</li>
+            <li><strong>Mingzheng Li</strong>, Xiao Sun, and Meng Wang. "Detecting depression with heterogeneous graph neural network in clinical interview transcript." <em>IEEE Transactions on Computational Social Systems</em> 11, no. 1 (2023): 1315-1324.(中科院二区,CCF C)</li>
+            <li>Haojie Xu, Weifeng Liu, Jiangwei Liu, <strong>Mingzheng Li</strong>, Yu Feng, Yasi Peng, Yunwei Shi, Xiao Sun, and Meng Wang. "Hybrid multimodal fusion for humor detection." <em>Proceedings of the 3rd International on Multimodal Sentiment Analysis Workshop and Challenge</em> (2022): 15-21.(CCF A)</li>
+            <li><strong>Mingzheng Li</strong>, Haojie Xu, Weifeng Liu, Jiangwei Liu. "Bidirectional LSTM and attention for depression detection on clinical interview transcripts." <em>2022 IEEE 10th International Conference on Information, Communication and Networks (ICICN)</em>, pp. 638-643. IEEE, 2022.(EI)</li>
+            <li><strong>Mingzheng Li</strong>, Lei Chen, Jing Zhao, Qiang Li. "Sentiment analysis of Chinese stock reviews based on BERT model." <em>Applied Intelligence</em> 51 (2021): 5016-5024. (中科院二区,CCF C)</li>
+            <li>Jing Zhao, <strong>Mingzheng Li</strong>, Jinting Liu, Dajie Sun. "Fractal simulation of hydrophobic flocculation fragmentation and reconstruction of coal particles." <em>Fuel</em> 360 (2024): 130564. （中科院二区）</li>
+            <li>Jing Zhao, Jinting Liu, <strong>Mingzheng Li</strong>, and Jingyun Hou. "Study on micro-energy consumption model of ultrafine grinding coal particles." <em>Fuel</em> 329 (2022): 125542. （中科院二区）</li>
+            <li>Zhao, Jing, Yunhu Hu, <strong>Mingzheng Li</strong>, Jinting Liu, and Jingyun Hou. "Study on the variation law of geometric and surface properties of ultrafine coal particles with particle size." <em>Particulate Science and Technology</em> 41, no. 8 (2023): 1079-1087. （中科院四区）</li>
+            <li>Yan Tang, <strong>Mingzheng Li</strong>, Wangsong Wang, Pengcheng Xuan, and Kun Geng. "Quality-Aware Movie Recommendation System on Big Data." <em>Proceedings of the Fourth IEEE/ACM International Conference on Big Data Computing, Applications and Technologies</em> (2017): 273-274.(EI)</li>
         </ul>
 
         <h2>团体标准</h2>
